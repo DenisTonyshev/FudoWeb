@@ -1,6 +1,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
@@ -9,12 +10,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../Assets/logo.png'
 
-const pages = ['Home', 'About', 'Classes', 'Gallery'];
+ // Define your buttons here
+ const pages = [
+  <Button component={ Link } to="/" key="button1" color="inherit">Home</Button>,
+  <Button component={ Link } to="/about" key="button2" color="inherit">About</Button>,
+  <Button component={ Link } to="/classes" key="button3" color="inherit">Classes</Button>,
+  // <Button key="button4" color="inherit">Gallery</Button>
+  // Add more buttons as needed
+];
 
 function NavigationBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
