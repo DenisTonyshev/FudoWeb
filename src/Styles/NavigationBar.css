@@ -1,0 +1,101 @@
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  visibility: show;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-list li {
+  margin-right: 10px;
+}
+
+.navbar-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  background-color: #777;
+}
+
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  cursor: pointer;
+}
+
+.menu-icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.open .menu-icon-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .menu-icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .menu-icon-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    visibility: hidden;
+  }
+  .navbar-content {
+    align-items: normal;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Height of the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+
+  .navbar-list.open {
+    display: flex;
+  }
+
+  .navbar-button {
+    margin: 5px;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on smaller screens */
+  }
+}
