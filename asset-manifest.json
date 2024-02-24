@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/fudoweb/static/css/main.012f1e05.css",
-    "main.js": "/fudoweb/static/js/main.63d63a28.js",
+    "main.css": "/fudoweb/static/css/main.e6c13ad2.css",
+    "main.js": "/fudoweb/static/js/main.23a12157.js",
+    "static/media/GroupPhoto.jpg": "/fudoweb/static/media/GroupPhoto.6440d6cb7de7242b9a30.jpg",
+    "static/media/Pasha.jpg": "/fudoweb/static/media/Pasha.74ebeca2757697185308.jpg",
+    "static/media/kenju.jpg": "/fudoweb/static/media/kenju.6c193c2dd3e2cb158721.jpg",
     "static/media/logo.png": "/fudoweb/static/media/logo.e93fb5012d6f6756da2d.png",
     "index.html": "/fudoweb/index.html",
-    "main.012f1e05.css.map": "/fudoweb/static/css/main.012f1e05.css.map",
-    "main.63d63a28.js.map": "/fudoweb/static/js/main.63d63a28.js.map"
+    "main.e6c13ad2.css.map": "/fudoweb/static/css/main.e6c13ad2.css.map",
+    "main.23a12157.js.map": "/fudoweb/static/js/main.23a12157.js.map"
   },
   "entrypoints": [
-    "static/css/main.012f1e05.css",
-    "static/js/main.63d63a28.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.23a12157.js"
   ]
 }
