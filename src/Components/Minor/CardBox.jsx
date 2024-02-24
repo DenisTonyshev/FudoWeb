@@ -9,9 +9,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-export default function SideCard({ data }) {
+
+export default function SideCard({ data }) { 
   const theme = useTheme();
-  const { name, text, imageLink, extra=false, LSide = false } = data;
+    const { name, text, imageLink, extra = false, LSide = false, facebookLink='', instagramLink='' } = data;
+    const handleClick = (url) => {    
+        window.open(url, '_blank');
+    };
   return (
       <Card sx={{ display: 'flex',  marginBottom: '10px' }}>
           {LSide && (
@@ -26,16 +30,16 @@ export default function SideCard({ data }) {
           <Typography component="div" variant="h5">
                       { name }
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
+          <Typography variant="subtitle1" color="text.secondary" component="div"  sx={{ whiteSpace: 'pre-line' }}>
                       { text }
           </Typography>
               </CardContent>
               {extra && (
                   <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-                      <IconButton aria-label="Instagramm">
+                      <IconButton aria-label="Instagramm" onClick={() => handleClick(instagramLink)} >
                           <InstagramIcon />
                       </IconButton>
-                      <IconButton aria-label="Facebook">
+                      <IconButton aria-label="Facebook" onClick={() => handleClick(facebookLink)}>
                           <FacebookIcon />
                       </IconButton>
                   </Box>)}

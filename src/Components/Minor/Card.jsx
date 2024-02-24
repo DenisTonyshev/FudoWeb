@@ -8,13 +8,13 @@ import Typography from '@mui/material/Typography';
 
 export default function ImgMediaCard({ data={} }) {
     // Destructure the object within the component
-    const { header, text, imageLink, extra=false } = data;
+    const { header, text, imageLink, extra=false, heigt=240 } = data;
   return (
       <Card sx={{ marginBottom: '10px' }}>
       <CardMedia
               component="img"
               alt="Kendo"
-              height="240"
+              height={heigt}
               image={ imageLink }
       />
       <CardContent>

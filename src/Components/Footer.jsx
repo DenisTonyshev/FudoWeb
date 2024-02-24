@@ -1,36 +1,36 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import FolderIcon from '@mui/icons-material/Folder';
-import RestoreIcon from '@mui/icons-material/Restore';
+import NavigationIcon from '@mui/icons-material/NavigationSharp';
+import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Link } from 'react-router-dom';
+
 
 export default function LabelBottomNavigation() {
   const [value, setValue] = React.useState('recents');
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
-    <BottomNavigation value={value} onChange={handleChange} sx={{ marginTop: '10px' , backgroundColor: 'black' }}>
+    <BottomNavigation value={value} sx={{ marginTop: '10px' , backgroundColor: 'black' }}>
       <BottomNavigationAction
-        label="Recents"
-        value="recents"
-        icon={<RestoreIcon sx={{color:"white"}} />}
+        label="Home Page"
+        icon={<HomeIcon sx={{ color: "white" }} />}
+        component={ Link } to="/fudoweb"
       />
       <BottomNavigationAction
         label="Favorites"
-        value="favorites"
         icon={<FavoriteIcon sx={{color:"white"}}/>}
       />
       <BottomNavigationAction
         label="Nearby"
-        value="nearby"
         icon={<LocationOnIcon sx={{color:"white"}}/>}
       />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon sx={{color:"white"}}/>} />
+      <BottomNavigationAction
+        label="Navigation"
+        icon={<NavigationIcon sx={{ color: "white" }} />}
+      />
     </BottomNavigation>
   );
 }
