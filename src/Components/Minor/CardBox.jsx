@@ -11,11 +11,18 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 export default function SideCard({ data }) {
   const theme = useTheme();
-  const { name, text, imageLink, extra=false } = data;
+  const { name, text, imageLink, extra=false, LSide = false } = data;
   return (
-    <Card sx={{ display: 'flex' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
+      <Card sx={{ display: 'flex',  marginBottom: '10px' }}>
+          {LSide && (
+              <CardMedia
+                  component="img"
+                  sx={{ width: 151 }}
+                  image={imageLink}
+                  alt="Live from space album cover"
+              />)}
+          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+              <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h5">
                       { name }
           </Typography>
@@ -33,13 +40,13 @@ export default function SideCard({ data }) {
                       </IconButton>
                   </Box>)}
           </Box>
-          
-      <CardMedia
-        component="img"
-        sx={{ width: 151 }}
-        image= {imageLink}
-        alt="Live from space album cover"
-      />
+          {!LSide && (
+              <CardMedia
+                  component="img"
+                  sx={{ width: 151 }}
+                  image={imageLink}
+                  alt="Live from space album cover"
+              />)}
     </Card>
   );
 }
