@@ -7,6 +7,7 @@ import HomePage from './Components/HomePage';
 import About from './Components/About';
 import Classes from './Components/Classes';
 import Footer from './Components/Footer';
+import Contact from './Components/Contact';
 
 
 const App = () => {
@@ -19,6 +20,9 @@ const App = () => {
         <Route path="/fudoweb" exact element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/classes" element={<Classes />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/gallery" element={<Classes />} /> */}
+        {/* <Route path="/faq" element={<Classes />} /> */}
              </Routes>
            </div>
            <Footer />

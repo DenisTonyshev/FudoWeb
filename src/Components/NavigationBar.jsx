@@ -15,10 +15,12 @@ import logo from '../Assets/logo.png'
 
  // Define your buttons here
  const pages = [
-  <Button component={ Link } to="/fudoweb" key="button1" color="inherit">Home</Button>,
-  <Button component={ Link } to="/about" key="button2" color="inherit">About Us</Button>,
-  <Button component={ Link } to="/classes" key="button3" color="inherit">Classes</Button>,
-  // <Button key="button4" color="inherit">Gallery</Button>
+  <Button component={ Link } index={0} to="/fudoweb" key="button1" color="inherit">Home</Button>,
+  <Button component={ Link } index={1} to="/about" key="button2" color="inherit">About Us</Button>,
+  <Button component={ Link } index={2} to="/classes" key="button3" color="inherit">Classes</Button>,
+  <Button component={Link} index={3} to="/contact" key="button4" color="inherit">Contact Us</Button>,
+  <Button component={ Link } index={4} to="/gallery" key="button5" color="inherit">Gallery</Button>,
+  <Button component={ Link } index={5} to="/faq" key="button5" color="inherit">F.A.Q</Button>,
   // Add more buttons as needed
 ];
 
@@ -41,7 +43,8 @@ function NavigationBar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
+            component={ Link } 
+            to="/fudoweb"
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
@@ -86,8 +89,8 @@ function NavigationBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography key={"main "+ page.index} textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -104,7 +107,7 @@ function NavigationBar() {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.12rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -114,7 +117,7 @@ function NavigationBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={"menu " + page.index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
