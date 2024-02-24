@@ -6,6 +6,7 @@ import NavigationBar from './Components/NavigationBar';
 import HomePage from './Components/HomePage';
 import About from './Components/About';
 import Classes from './Components/Classes';
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -15,12 +16,12 @@ const App = () => {
            <NavigationBar />
            <div className="body-container">
       <Routes>
-        <Route path="/" exact element={<HomePage />} />
+        <Route path="/fudoweb" exact element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/classes" element={<Classes />} />
              </Routes>
            </div>
-           {/* <Footer /> */}
+           <Footer />
            </div>
     </BrowserRouter>
   );

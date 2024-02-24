@@ -15,8 +15,8 @@ import logo from '../Assets/logo.png'
 
  // Define your buttons here
  const pages = [
-  <Button component={ Link } to="/" key="button1" color="inherit">Home</Button>,
-  <Button component={ Link } to="/about" key="button2" color="inherit">About</Button>,
+  <Button component={ Link } to="/fudoweb" key="button1" color="inherit">Home</Button>,
+  <Button component={ Link } to="/about" key="button2" color="inherit">About Us</Button>,
   <Button component={ Link } to="/classes" key="button3" color="inherit">Classes</Button>,
   // <Button key="button4" color="inherit">Gallery</Button>
   // Add more buttons as needed
@@ -34,7 +34,7 @@ function NavigationBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ marginBottom: '10px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} alt="Remy Sharp" src={logo} />
