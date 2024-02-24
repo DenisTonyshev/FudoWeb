@@ -11,11 +11,11 @@ const text = (
     <br/>
     <br/>
 
-    Beginners are most welcome to join our dojo, location details are in the contact section.
+    Beginners are most welcome to join our dojo, location details are in the section below.
     <br/>
     <br/>
     <Typography gutterBottom variant="h5" component="div" sx={{color: 'black'}}>
-      All equipment needed to practice kendo is provided.
+    All equipment needed to practice kendo is provided.
     </Typography>
     <br/>
 

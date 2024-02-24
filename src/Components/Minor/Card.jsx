@@ -35,5 +35,3 @@ export default function ImgMediaCard({ data={} }) {
       </Card>
     );
 }
-{/* <Card sx={{ maxWidth: 345 }}> */}
-// ""

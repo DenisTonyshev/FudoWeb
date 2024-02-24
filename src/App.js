@@ -8,7 +8,7 @@ import About from './Components/About';
 import Classes from './Components/Classes';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
-
+import FAQ from './Components/Faq';
 
 const App = () => {
      return (
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/classes" element={<Classes />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/gallery" element={<Classes />} /> */}
-        {/* <Route path="/faq" element={<Classes />} /> */}
+        <Route path="/faq" element={<FAQ />} />
              </Routes>
            </div>
            <Footer />

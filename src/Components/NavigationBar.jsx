@@ -19,7 +19,7 @@ import logo from '../Assets/logo.png'
   <Button component={ Link } index={1} to="/about" key="button2" color="inherit">About Us</Button>,
   <Button component={ Link } index={2} to="/classes" key="button3" color="inherit">Classes</Button>,
   <Button component={Link} index={3} to="/contact" key="button4" color="inherit">Contact Us</Button>,
-  <Button component={ Link } index={4} to="/gallery" key="button5" color="inherit">Gallery</Button>,
+  // <Button component={ Link } index={4} to="/gallery" key="button5" color="inherit">Gallery</Button>,
   <Button component={ Link } index={5} to="/faq" key="button5" color="inherit">F.A.Q</Button>,
   // Add more buttons as needed
 ];
@@ -39,7 +39,7 @@ function NavigationBar() {
     <AppBar position="static" sx={{ marginBottom: '10px', backgroundColor: 'black' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} alt="Remy Sharp" src={logo} />
+          <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} alt="Kendo Logo" src={logo} />
           <Typography
             variant="h6"
             noWrap
@@ -56,7 +56,7 @@ function NavigationBar() {
               textDecoration: 'none',
             }}
           >
-            Fudoshinkan Kendo
+            Fudo Shinkan Kendo
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -97,22 +97,23 @@ function NavigationBar() {
           </Box>
           <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} alt="Remy Sharp" src={logo} />
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
-            component="a"
+            component={ Link } 
+            to="/fudoweb"
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.12rem',
+              fontWeight: 600,
+              letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            Fudoshinkan Kendo
+            Fudo Shinkan Kendo
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
