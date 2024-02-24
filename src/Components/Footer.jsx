@@ -14,23 +14,23 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation value={value} onChange={handleChange} sx={{ marginTop: '10px' }}>
+    <BottomNavigation value={value} onChange={handleChange} sx={{ marginTop: '10px' , backgroundColor: 'black' }}>
       <BottomNavigationAction
         label="Recents"
         value="recents"
-        icon={<RestoreIcon />}
+        icon={<RestoreIcon sx={{color:"white"}} />}
       />
       <BottomNavigationAction
         label="Favorites"
         value="favorites"
-        icon={<FavoriteIcon />}
+        icon={<FavoriteIcon sx={{color:"white"}}/>}
       />
       <BottomNavigationAction
         label="Nearby"
         value="nearby"
-        icon={<LocationOnIcon />}
+        icon={<LocationOnIcon sx={{color:"white"}}/>}
       />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
+      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon sx={{color:"white"}}/>} />
     </BottomNavigation>
   );
 }

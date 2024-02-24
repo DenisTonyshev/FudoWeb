@@ -34,7 +34,7 @@ function NavigationBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ marginBottom: '10px' }}>
+    <AppBar position="static" sx={{ marginBottom: '10px', backgroundColor: 'black' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} alt="Remy Sharp" src={logo} />
