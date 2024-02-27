@@ -3,6 +3,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import NavigationIcon from '@mui/icons-material/NavigationSharp';
 import HomeIcon from '@mui/icons-material/Home';
+import CollectionsIcon from '@mui/icons-material/Collections';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Link } from 'react-router-dom';
@@ -21,16 +22,17 @@ export default function LabelBottomNavigation() {
       />
       <BottomNavigationAction
         label="Favorites"
-        icon={<FavoriteIcon sx={{color:"white"}}/>}
+        icon={<CollectionsIcon sx={{ color: "white" }} />}
+        component={ Link } to="/gallery"
       />
-      <BottomNavigationAction
+      {/* <BottomNavigationAction
         label="Nearby"
         icon={<LocationOnIcon sx={{color:"white"}}/>}
       />
       <BottomNavigationAction
         label="Navigation"
         icon={<NavigationIcon sx={{ color: "white" }} />}
-      />
+      /> */}
     </BottomNavigation>
   );
 }

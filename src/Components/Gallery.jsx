@@ -1,10 +1,12 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
+import Container from '@mui/material/Container';
 import ImageListItem from '@mui/material/ImageListItem';
 
 export default function StandardImageList() {
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+    <Container maxWidth="md">
+    <ImageList cols={6} rowHeight={200}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -16,6 +18,7 @@ export default function StandardImageList() {
         </ImageListItem>
       ))}
     </ImageList>
+    </Container>
   );
 }
 

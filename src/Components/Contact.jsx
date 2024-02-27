@@ -18,7 +18,7 @@ export default function ContactForm() {
 
     // Create a hidden HTML form
     const htmlForm = document.createElement('form');
-    htmlForm.setAttribute('action', 'https://fabform.io/f/9OTK-hR');
+    htmlForm.setAttribute('action', `https://fabform.io/f/${process.env.FORM_TOKEN || ""}`);
     htmlForm.setAttribute('method', 'post');
     htmlForm.style.display = 'none';
 

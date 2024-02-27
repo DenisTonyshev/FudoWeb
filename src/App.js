@@ -8,6 +8,7 @@ import About from './Components/About';
 import Classes from './Components/Classes';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
+import Gallery from './Components/Gallery';
 import FAQ from './Components/Faq';
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/gallery" element={<Classes />} /> */}
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
              </Routes>
            </div>

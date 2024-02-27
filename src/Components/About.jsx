@@ -42,7 +42,7 @@ const About = () => {
           We practice every Monday and Thursday 7-9pm in the small studio inside the building.`,
     imageLink: groupPhoto,
     index: 0,
-    extra: true,
+    // extra: true,
       }} />
       <Typography gutterBottom variant="h5" component="div">
         Who we ARE: 
