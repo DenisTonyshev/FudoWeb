@@ -19,15 +19,18 @@ export default function SimplePaper({ data }) {
       }}
     >
       <img
-      src={q2}
+        src={q2}
+        alt="fighter"
         style={{borderRadius: '25px'}}
       />
       <img
-      src={q1}
+        src={q1}
+        alt="fighter"
         style={{borderRadius: '25px' , backgroundColor: '#d3d3d3'}}
       />
       <img
-      src={q3}
+        src={q3}
+        alt="fighter"
         style={{borderRadius: '25px'}}
     />
     </Box>
