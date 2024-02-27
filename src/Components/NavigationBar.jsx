@@ -15,7 +15,7 @@ import logo from '../Assets/logo.png'
 
  // Define your buttons here
  const pages = [
-  <Button component={ Link } index={0} to="/fudoweb" key="button1" color="inherit">Home</Button>,
+  <Button component={ Link } index={0} to="/" key="button1" color="inherit">Home</Button>,
   <Button component={ Link } index={1} to="/about" key="button2" color="inherit">About Us</Button>,
   <Button component={ Link } index={2} to="/classes" key="button3" color="inherit">Classes</Button>,
   <Button component={Link} index={3} to="/contact" key="button4" color="inherit">Contact Us</Button>,
@@ -44,7 +44,7 @@ function NavigationBar() {
             variant="h6"
             noWrap
             component={ Link } 
-            to="/fudoweb"
+            to="/"
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
@@ -100,7 +100,7 @@ function NavigationBar() {
             variant="h6"
             noWrap
             component={ Link } 
-            to="/fudoweb"
+            to="/"
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,

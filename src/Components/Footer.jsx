@@ -14,7 +14,7 @@ export default function LabelBottomNavigation() {
       <BottomNavigationAction
         label="Home Page"
         icon={<HomeIcon sx={{ color: "white" }} />}
-        component={ Link } to="/fudoweb"
+        component={ Link } to="/"
       />
       <BottomNavigationAction
         label="Favorites"

@@ -18,7 +18,7 @@ const App = () => {
            <NavigationBar />
            <div className="body-container">
       <Routes>
-        <Route path="/fudoweb" exact element={<HomePage />} />
+        <Route path="/" exact element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/contact" element={<Contact />} />
