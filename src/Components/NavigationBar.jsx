@@ -39,7 +39,7 @@ function NavigationBar() {
     <AppBar position="static" sx={{ marginBottom: '10px', backgroundColor: 'black' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Avatar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} alt="Kendo Logo" src={logo} />
+          <Avatar sx={{ width:'80px',  height:'80px', display: { xs: 'none', md: 'flex' }, mr: 2 }} alt="Kendo Logo" src={logo} />
           <Typography
             variant="h6"
             noWrap
@@ -51,7 +51,7 @@ function NavigationBar() {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -95,7 +95,7 @@ function NavigationBar() {
               ))}
             </Menu>
           </Box>
-          <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} alt="Remy Sharp" src={logo} />
+          <Avatar sx={{ width:'60px',  height:'60px', display: { xs: 'flex', md: 'none' }, mr: 1 }} alt="Fudo Shinkan" src={logo} />
           <Typography
             variant="h6"
             noWrap
@@ -108,7 +108,7 @@ function NavigationBar() {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 600,
-              letterSpacing: '.1rem',
+              letterSpacing: '.05rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
