@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import FolderIcon from '@mui/icons-material/Folder';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -11,7 +9,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function SideCard({ data }) { 
-  const theme = useTheme();
     const { name, text, imageLink, extra = false, LSide = false, facebookLink='', instagramLink='' } = data;
     const handleClick = (url) => {    
         window.open(url, '_blank');

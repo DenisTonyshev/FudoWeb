@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import ImgMediaCard from './Minor/Card';
 import kenjutsu from '../Assets/kenju.jpg'
-import SimplePaper from './Minor/Paper';
 
 const homepageData = [
   {
@@ -17,7 +16,6 @@ const homepageData = [
     imageLink: kenjutsu,
     index: 1
 }
-
 ]
 
 const HomePage = () => {
