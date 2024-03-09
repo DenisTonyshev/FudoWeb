@@ -3,6 +3,8 @@ import Container from '@mui/material/Container';
 import Card from './Minor/Card';
 import Map from './Minor/GoogleMap';
 import Typography from '@mui/material/Typography';
+import classes from '../Assets/Classes.jpeg'
+
 
 const text = (
   <>
@@ -38,7 +40,7 @@ const Classes = () => {
       <Card data={{
       header: "Training session and fees:",
       text: text,
-      imageLink: "https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/424736230_17890577012982094_666053679106351686_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=rJwM0EcFUe4AX8RMie_&_nc_ht=scontent.ftlv5-1.fna&oh=00_AfAv8NTmxU-8SfNCxSyuHIYP3tZu_xRqrpj_fqdhvaZ-RQ&oe=65DEE281",
+      imageLink: classes,
       heigt: 340,
       index: 0,
       }} />

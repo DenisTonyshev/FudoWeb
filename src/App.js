@@ -10,13 +10,21 @@ import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
 import FAQ from './Components/Faq';
+import Box from '@mui/material/Box';
 
 const App = () => {
      return (
        <BrowserRouter>
          <div className="app-container">
            <NavigationBar />
-           <div className="body-container">
+          
+           <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
+        }}
+      >       
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/about" element={<About />} />
@@ -25,7 +33,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
              </Routes>
-           </div>
+          </Box>
            <Footer />
            </div>
     </BrowserRouter>

@@ -2,12 +2,13 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import ImgMediaCard from './Minor/Card';
 import kenjutsu from '../Assets/kenju.jpg'
+import main from '../Assets/Main.jpeg'
 
 const homepageData = [
   {
     header: "KENDO 剣道  – THE WAY OF THE SWORD:",
     text: `Concept of Kendo:\nKendo is the path toward the formation of human character (that is gained) through practicing the true principles of the Japanese sword*.\n\n剣道の理念:剣道は剣の理法の修練による人間形成の道である。\n\nNotes for *: 'the true principles of sword' is a translation of '剣の理法 (Ken no rihou)'. It can be translated into 'the nature of sword'.\nWhat it means here is both mental and physical forces and techniques regarded as causing and regulating phenomena in offence and defence by Japanese sword.`,
-    imageLink: "https://c4.wallpaperflare.com/wallpaper/392/72/872/sport-form-kendo-wallpaper-preview.jpg",
+    imageLink: main,
     index: 0
   },
   {
